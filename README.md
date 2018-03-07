@@ -8,6 +8,8 @@ Les utilisateurs de notre application Démo possèderont un identifiant unique a
 
 ## 1.2 Modéliser les micro-messages
 un micro-message possède seulement un champ **id** (identifiant) et un champ **content** (contenu) pour le texte du micro-message (de type string).<br/> Demeure cependant quelques complications : nous voulons associer chaque micro-message à un utilisateur particulier ; nous accomplirons cela en enregistrant le **user_id** (identifiant d'utilisateur) de l'auteur du message.<br/>
+![alt text](https://github.com/Zouz84/demo_app/blob/master/app/assets/images/micropost.png "microposts")
+
 
 
 
