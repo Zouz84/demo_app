@@ -1,24 +1,9 @@
-# README
+# 1 Demo_App
+Nous commençons donc par le modèle de données pour les utilisateurs de l'application, et nous ajouterons ensuite un modèle de données pour les micro-messages (microposts).:<br/>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+***
 
-Things you may want to cover:
+## 1.1 Modéliser les utilisateurs
+Les utilisateurs de notre application Démo possèderont un identifiant unique appelé id, un nom affiché publiquement (de type chaine de caractères, string) et une adresse mail (de type également string) qui servira de double au nom d'utilisateur (username). <br/>
+<br/>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
