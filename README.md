@@ -13,7 +13,7 @@ un micro-message possède seulement un champ **id** (identifiant) et un champ **
 ![alt text](https://github.com/Zouz84/demo_app/blob/master/app/assets/images/micropost.png "microposts")
 
 ## 2. La ressource Utilisateur
-Nous allons implémenter le **modèle de données** utilisateurs de la section 1.1, en même temps qu'une interface web pour ce modèle. La combinaison des deux constituera une ressource utilisateurs (Users resource) qui nous permettra de penser les utilisateurs comme des objets (objects) qui peuvent être créés, consultés, actualisés et supprimés sur le web via le protocole HTTP (le traducteur tient à préciser qu'il s'inscrit en faux contre le fait de « penser les utilisateurs comme des objets » :-).NdT).
+Nous allons implémenter le **modèle de données** utilisateurs de la section [1.1](#1.1), en même temps qu'une interface web pour ce modèle. La combinaison des deux constituera une ressource utilisateurs (Users resource) qui nous permettra de penser les utilisateurs comme des objets (objects) qui peuvent être créés, consultés, actualisés et supprimés sur le web via le protocole HTTP (le traducteur tient à préciser qu'il s'inscrit en faux contre le fait de « penser les utilisateurs comme des objets » :-).NdT).
 
 Comme promis dans l'introduction, notre ressource utilisateurs sera créée par un programme de génération d'échaffaudage, présent de façon standard dans chaque projet Rails. L'argument de la commande scaffold (échaffaudage) est la version singulier du nom de la ressource (dans ce cas : User), auquel on peut ajouter en paramètres optionnels les attributs du modèle de données :4
 
