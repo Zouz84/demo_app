@@ -28,7 +28,16 @@ rake db:migrate
    -> 0.0017s
 ==  CreateUsers: migrated (0.0018s) ===========================================
 ```
-dq
+Cette procédure actualise simplement la base de données avec notre nouveau **modèle de données** utilisateurs (*users*).
+On envoie un **rails s** et on se dirige sur **Localhost:3000**: "*Yay ! You're on Rails*"<br/>
+### 2.1 Un tour de l'utilisateur
+URL   |	Action   |	Page
+---   |  ---   |  ---
+/users   |	index |	Page listant les utilisateurs
+/users/1 |	show  |	Page de l'utilisateur d'id 1
+/users/new  |	new   |	Page pour créer un nouvel utilisateur
+/users/1/edit  |	edit  |	Page d'édition de l'utilisateur d'id 1
+
 
 
 
