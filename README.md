@@ -58,8 +58,9 @@ Le résultat est la page d'utilisateur **show** (afficher). Le message vert de b
 6. Le contrôleur place les utilisateurs dans la variable **@users**, variable qui est passée à la **vue index**
 7. La vue utilise le code Ruby embarqué pour rendre la page au format HTML
 8. Le contrôleur renvoie le code HTML au navigateur, qui affiche enfin la page.
-<br/>
+
 * Controller User:
+
 ``` Ruby
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
