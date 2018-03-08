@@ -43,8 +43,8 @@ URL   |	Action   |	Page
 
 Nous commençons avec la page listant tous les utilisateurs de notre application, appelée **index** ; comme nous pouvons nous y attendre, il n'y a pour le moment aucun utilisateur. : [localhost:3000/users](http://localhost:3000/users)(ahah).
 <br/>
-De là, nous allons cliquer sur "**_New User**_".<br/>
-Cela nous mène sur http://localhost:3000/**users/new**<br/>
+De là, nous allons cliquer sur "**_New User_**".<br/>
+Cela nous mène sur http://localhost:3000/users/new<br/>
 <br/>
 Nous pouvons y créer un nouvel utilisateur en entrant les *valeurs* du **nom** et de l'**email** dans les champs de texte correspondants et en cliquant ensuite sur le bouton de création (**_Create User_**).
 Le résultat est la page d'utilisateur **show** (afficher). Le message vert de bienvenue est obtenu en utilisant la messagerie flash (qui sera abordée plus tard). Notez que l'URL est à présent **/users/1** ; comme vous pouvez vous en douter, le nombre **1** est l'identifiant de l'utilisateur (**l'attribut id**). Plus loin, cette page deviendra la page du profil de l'utilisateur.<br/>
