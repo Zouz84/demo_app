@@ -48,6 +48,9 @@ Cela nous mène sur http://localhost:3000/users/new<br/>
 <br/>
 Nous pouvons y créer un nouvel utilisateur en entrant les *valeurs* du **nom** et de l'**email** dans les champs de texte correspondants et en cliquant ensuite sur le bouton de création (**_Create User_**).
 Le résultat est la page d'utilisateur **show** (afficher). Le message vert de bienvenue est obtenu en utilisant la messagerie flash (qui sera abordée plus tard). Notez que l'URL est à présent **/users/1** ; comme vous pouvez vous en douter, le nombre **1** est l'identifiant de l'utilisateur (**l'attribut id**). Plus loin, cette page deviendra la page du profil de l'utilisateur.<br/>
+### 2.2 MVC en action
+![alt text](https://github.com/Zouz84/demo_app/blob/master/app/assets/images/mvc.png "MVC")
+
 
 
 
