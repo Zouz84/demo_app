@@ -32,6 +32,7 @@ Cette procédure actualise simplement la base de données avec notre nouveau **m
 On envoie un **rails s** et on se dirige sur **Localhost:3000**: "*Yay ! You're on Rails*"<br/>
 ### 2.1 Un tour de l'utilisateur
 Le *scaffold* créé aussi déjà des *routes*. Si on tape ces URL après notre Localhost:3000, nous tomberons sur les pages présentées ci-dessous.<br/>
+
 URL   |	Action   |	Page
 ---   |  ---   |  ---
 /users   |	index |	Page listant les utilisateurs
@@ -39,6 +40,7 @@ URL   |	Action   |	Page
 /users/new  |	new   |	Page pour créer un nouvel utilisateur
 /users/1/edit  |	edit  |	Page d'édition de l'utilisateur d'id 1
 <br/>
+
 Nous commençons avec la page listant tous les utilisateurs de notre application, appelée **index** ; comme nous pouvons nous y attendre, il n'y a pour le moment aucun utilisateur. : [localhost:3000/users](http://localhost:3000/users)(ahah).
 <br/>
 De là, nous allons cliquer sur "**_New User**_".<br/>
