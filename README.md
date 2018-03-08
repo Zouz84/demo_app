@@ -33,7 +33,7 @@ On envoie un **rails s** et on se dirige sur **Localhost:3000**: "*Yay ! You're 
 ### 2.1 Un tour de l'utilisateur
 Le *scaffold* créé aussi déjà des *routes*. Si on tape ces URL après notre Localhost:3000, nous tomberons sur les pages présentées ci-dessous.<br/>
 
-URL   |	Action   |	Page
+URL   |	<a name="action">Action</a>   |	Page
 ---   |  ---   |  ---
 /users   |	index |	Page listant les utilisateurs
 /users/1 |	show  |	Page de l'utilisateur d'id 1
@@ -50,6 +50,14 @@ Nous pouvons y créer un nouvel utilisateur en entrant les *valeurs* du **nom** 
 Le résultat est la page d'utilisateur **show** (afficher). Le message vert de bienvenue est obtenu en utilisant la messagerie flash (qui sera abordée plus tard). Notez que l'URL est à présent **/users/1** ; comme vous pouvez vous en douter, le nombre **1** est l'identifiant de l'utilisateur (**l'attribut id**). Plus loin, cette page deviendra la page du profil de l'utilisateur.<br/>
 ### 2.2 MVC en action
 ![alt text](https://github.com/Zouz84/demo_app/blob/master/app/assets/images/mvc.png "MVC")
+1. Le navigateur reçoit une requête pour l'URL **/users**
+2. Rails route **/users** vers une [action](#actions) **index** dans le contrôleur Users
+3. L'action **index** demande au *modèle User* de récupérer tous les utilisateurs (**User.all**)
+4. Le modèle User tire tous les utilisateurs de la base de données
+5. Le modèle User retourne au contrôleur la liste des utilisateurs
+6. Le contrôleur place les utilisateurs dans la variable @users, variable qui est passée à la vue index
+7. La vue utilise le code Ruby embarqué pour rendre la page au format HTML
+8. Le contrôleur renvoie le code HTML au navigateur, qui affiche enfin la page.
 
 
 
