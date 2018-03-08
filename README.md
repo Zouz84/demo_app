@@ -51,7 +51,7 @@ Le résultat est la page d'utilisateur **show** (afficher). Le message vert de b
 ### 2.2 MVC en action
 ![alt text](https://github.com/Zouz84/demo_app/blob/master/app/assets/images/mvc.png "MVC")
 1. Le navigateur reçoit une requête pour l'URL **/users**
-2. Rails route **/users** vers une [action](#actions) **index** dans le contrôleur Users
+2. Rails route **/users** vers une [action](#action) **index** dans le contrôleur Users
 3. L'action **index** demande au *modèle User* de récupérer tous les utilisateurs (**User.all**)
 4. Le modèle User tire tous les utilisateurs de la base de données
 5. Le modèle User retourne au contrôleur la liste des utilisateurs
