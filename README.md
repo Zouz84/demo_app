@@ -53,11 +53,28 @@ Le résultat est la page d'utilisateur **show** (afficher). Le message vert de b
 1. Le navigateur reçoit une requête pour l'URL **/users**
 2. Rails route **/users** vers une [action index](#action) dans le contrôleur Users
 3. L'[action index](#action) demande au *modèle User* de récupérer tous les utilisateurs (**User.all**)
-4. Le modèle User tire tous les utilisateurs de la base de données
-5. Le modèle User retourne au contrôleur la liste des utilisateurs
-6. Le contrôleur place les utilisateurs dans la variable @users, variable qui est passée à la vue index
+4. Le modèle **User** tire *tous les utilisateurs* de la **base de données**
+5. Le modèle **User** retourne au contrôleur la liste des utilisateurs
+6. Le contrôleur place les utilisateurs dans la variable **@users**, variable qui est passée à la **vue index**
 7. La vue utilise le code Ruby embarqué pour rendre la page au format HTML
 8. Le contrôleur renvoie le code HTML au navigateur, qui affiche enfin la page.
+<br/>
+* Controller User:
+``` Ruby
+class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
+
+  def index
+    @users = User.all
+  end
+  ```
+* Routes 
+``` Ruby
+Rails.application.routes.draw do
+  resources :users
+  end
+ ```
+ aza
 
 
 
