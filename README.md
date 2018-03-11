@@ -135,7 +135,7 @@ DELETE   |	/microposts/1  |	destroy  |	Détruire le micro-message d'id 1
 <br/>
 **Remarque:** "Resources :microposts" s'inscrit directement dans le fichier `config/routes` grâce au scaffoldeur.<br/>
 
-
+sq
 
  
 ### 2.3.2 Appliquer le micro aux micros messages
