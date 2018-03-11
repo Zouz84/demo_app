@@ -12,6 +12,8 @@ Les utilisateurs de notre application Démo possèderont un identifiant unique a
 un micro-message possède seulement un champ **id** (identifiant) et un champ **content** (contenu) pour le texte du micro-message (de type string).<br/> Demeure cependant quelques complications : nous voulons associer chaque micro-message à un utilisateur particulier ; nous accomplirons cela en enregistrant le **user_id** (identifiant d'utilisateur) de l'auteur du message.<br/>
 ![alt text](https://github.com/Zouz84/demo_app/blob/master/app/assets/images/micropost.png "microposts")
 
+***
+
 ## 2.2 La ressource Utilisateur
 Nous allons implémenter le **modèle de données** utilisateurs de la section [2.1.1](#2.1.1), en même temps qu'une interface web pour ce modèle. La combinaison des deux constituera une ressource utilisateurs (Users resource) qui nous permettra de penser les utilisateurs comme des objets (objects) qui peuvent être créés, consultés, actualisés et supprimés sur le web via le protocole HTTP (le traducteur tient à préciser qu'il s'inscrit en faux contre le fait de « penser les utilisateurs comme des objets »).
 
@@ -83,6 +85,8 @@ En gros le **Scaffold** c'est bien, mais:
 * __Pas de tests.__ Techniquement, ça n'est pas tout à fait juste — l'échaffaudage inclut des tests rudimentaires — mais les test générés automatiquement son laids et rigides, et ils ne testent pas la validation des données, l'authentification ou autres besoins personnalisés ;
 * __Pas de mise en page.__ Il n'y a pas de charte graphique, no css, no bootstrap. Rien.
 * __Pas de compréhension réelle.__ Rien n'a été fait à la main, tout est automatisé alors on ne peut pas vraiment comprendre le fonctionnement de la machine.
+
+***
 
 ## 2.3 La ressource micro message (Micropost)
 
