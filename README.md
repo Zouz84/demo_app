@@ -133,6 +133,8 @@ GET   |	/microposts/1/edit   |	edit  |	Page pour éditer le micro-message d'id 1
 PUT   |	/microposts/1  |	update   |	Actualiser le micro-message d'id 1
 DELETE   |	/microposts/1  |	destroy  |	Détruire le micro-message d'id 1
 <br/>
+**Remarque:** "Resources :microposts" s'inscrit directement dans le fichier `config/routes` grâce au scaffoldeur.<br/>
+
 
 
  
