@@ -218,6 +218,15 @@ $ heroku rake db:migrate
 ```
 Et bam, ça a fait des chocapics.<br/>
 https://quiet-spire-25471.herokuapp.com/microposts
+<br/>
+<br/>
+<br/>
+<br/>
+Tu veux le [Chapitre 3](https://github.com/Zouz84/Chapter3)? C'est par ici.
+<br/>
+<br/>
+<br/>
+**Force & Honneur**
 
 
 
