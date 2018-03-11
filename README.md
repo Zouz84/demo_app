@@ -122,6 +122,7 @@ $ rails generate scaffold Micropost content:string user_id:integer
  <br/>
  Comme pour les utilisateurs, la règle des routages **resources :microposts** dirige les URLs des micro-messages vers les actions correspondantes dans le contrôleur Microposts, comme selon la table qui suit:
 <br/>
+
 Requête HTTP   |	URL   |	Action   |	Page ou Opération
 ---   |  ---   |  ---   |  ---
 GET   |	/microposts |	index |	Page listant tous les micro-messages
