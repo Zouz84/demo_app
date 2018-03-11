@@ -178,6 +178,24 @@ Loading development environment (Rails 5.1.5)
  updated_at: Wed, 07 Mar 2018 10:17:43 UTC +00:00>
 [2] pry(main)> 
 ```
+Maintenant on va essayer d'obtenir tous les **microposts** postés par l'user 1:
+```ruby
+[2] pry(main)> first_user.microposts
+  Micropost Load (0.3ms)  SELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = ?  [["user_id", 1]]
+=> [#<Micropost:0x000000011e3c90
+  id: 1,
+  content: "Wesh alors, wesh alors !",
+  user_id: 1,
+  created_at: Sun, 11 Mar 2018 12:42:51 UTC +00:00,
+  updated_at: Sun, 11 Mar 2018 12:42:51 UTC +00:00>]
+[3] pry(main)> 
+
+```
+**INTERESSANT:** Si l'on n'avait pas ces associations, lorsque nous appelions User.first.microposts, la console nous aurait retourné:
+```ruby
+NoMethodError: undefined method `microposts' for #<User:0x00000003b939a0>
+from /home/seize/.rvm/gems/ruby-2.3.4/gems/activemodel-5.1.5/lib/active_model/attribute_methods.rb:432:in `method_missing'
+```
 
 ### 2.3.5 Hiérarchie des héritages
 ### 2.3.6 Déployer l'app Démo
