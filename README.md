@@ -133,12 +133,20 @@ GET   |	/microposts/1/edit   |	edit  |	Page pour éditer le micro-message d'id 1
 PUT   |	/microposts/1  |	update   |	Actualiser le micro-message d'id 1
 DELETE   |	/microposts/1  |	destroy  |	Détruire le micro-message d'id 1
 <br/>
-**Remarque:** "Resources :microposts" s'inscrit directement dans le fichier `config/routes` grâce au scaffoldeur.<br/>
+__Remarque:__ "Resources :microposts" s'inscrit directement dans le fichier `config/routes` grâce au scaffoldeur.
+<br/> 
+On remarque aussi que l'URL **www.localhost:3000/microposts** nous emmene bien vers l'Index des microposts.<br/>
 
-sq
-
- 
 ### 2.3.2 Appliquer le micro aux micros messages
+On va la jouer "à la twitter" (old school) en instaurant une limite max de 140 charactères...<br/>
+On va ouvrir le fichier `app/models/micropost.rb` <br/>
+Dans ce **model** ,on va ajouter une **validation**. Le model devra donc ressembler à ça:
+```Ruby
+class Micropost < ActiveRecord::Base
+  validates :content, :length => { :maximum => 140 }
+end
+```
+
 ### 2.3.3 Un Utilisateur has_many micro messages
 ### 2.3.4 Hiérarchie des héritages
 ### 2.3.5 Déployer l'app Démo
