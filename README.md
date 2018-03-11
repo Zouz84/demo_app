@@ -164,7 +164,7 @@ Voilà un schéma qui résume assez bien notre situation:<br/>
 <br/>
 ### 2.3.4 Testons (optionnel)
 Nous pouvons examiner les implications de cette association en utilisant la *console*, qui est un outil utile pour interagir avec les applications Rails. Nous invoquons tout d'abord la console avec **rails console** en ligne de commande, puis récupérons le premier utilisateur dans la base de données en tapant **User.first** (en plaçant le résultat dans la variable **first_user**:
-```shell
+```console
 ~/demo_app $ rails c
 Running via Spring preloader in process 8261
 Loading development environment (Rails 5.1.5)
