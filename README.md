@@ -158,11 +158,29 @@ end
 Notre **model** microposts on ajoutera:<br/>
 ` belongs_to :user`
 <br/>
+<br/>
 Voilà un schéma qui résume assez bien notre situation:<br/>
 ![alt text](https://github.com/Zouz84/demo_app/blob/master/app/assets/images/micro.png "relations")
+<br/>
+### 2.3.4 Testons (optionnel)
+Nous pouvons examiner les implications de cette association en utilisant la *console*, qui est un outil utile pour interagir avec les applications Rails. Nous invoquons tout d'abord la console avec **rails console** en ligne de commande, puis récupérons le premier utilisateur dans la base de données en tapant **User.first** (en plaçant le résultat dans la variable **first_user**:
+```shell
+~/demo_app $ rails c
+Running via Spring preloader in process 8261
+Loading development environment (Rails 5.1.5)
+[1] pry(main)> first_user = User.first
+  User Load (0.3ms)  SELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?  [["LIMIT", 1]]
+=> #<User:0x00000003b939a0
+ id: 1,
+ nom: "Nom",
+ email: "email",
+ created_at: Wed, 07 Mar 2018 10:17:43 UTC +00:00,
+ updated_at: Wed, 07 Mar 2018 10:17:43 UTC +00:00>
+[2] pry(main)> 
+```
 
-### 2.3.4 Hiérarchie des héritages
-### 2.3.5 Déployer l'app Démo
+### 2.3.5 Hiérarchie des héritages
+### 2.3.6 Déployer l'app Démo
 
 
 
