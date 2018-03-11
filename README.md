@@ -14,7 +14,7 @@ un micro-message possède seulement un champ **id** (identifiant) et un champ **
 
 ***
 
-## 2.2 La ressource Utilisateur
+## <a name="2.2"> 2.2 La ressource Utilisateur</a>
 Nous allons implémenter le **modèle de données** utilisateurs de la section [2.1.1](#2.1.1), en même temps qu'une interface web pour ce modèle. La combinaison des deux constituera une ressource utilisateurs (Users resource) qui nous permettra de penser les utilisateurs comme des objets (objects) qui peuvent être créés, consultés, actualisés et supprimés sur le web via le protocole HTTP (le traducteur tient à préciser qu'il s'inscrit en faux contre le fait de « penser les utilisateurs comme des objets »).
 
 Comme promis dans l'introduction, notre ressource utilisateurs sera créée par un programme de génération d'échaffaudage, présent de façon standard dans chaque projet Rails. L'argument de la commande scaffold (échaffaudage) est la version singulier du nom de la ressource (dans ce cas : User), auquel on peut ajouter en paramètres optionnels les attributs du modèle de données :<br/>
@@ -89,7 +89,7 @@ En gros le **Scaffold** c'est bien, mais:
 ***
 
 ## 2.3 La ressource micro message (Micropost)
-
+Juste prendre conscience des similitudes entre cette ressource Micropost, et la ressource [utilisateurs](#2.2).
 ### 2.3.1 Un petit tour du micro message
 ### 2.3.2 Appliquer le micro aux micros messages
 ### 2.3.3 Un Utilisateur has_many micro messages
