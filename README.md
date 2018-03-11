@@ -91,6 +91,34 @@ En gros le **Scaffold** c'est bien, mais:
 ## 2.3 La ressource micro message (Micropost)
 Juste prendre conscience des similitudes entre cette ressource Micropost, et la ressource [utilisateurs](#2.2).
 ### 2.3.1 Un petit tour du micro message
+``` Rails
+$ rails generate scaffold Micropost content:string user_id:integer
+      invoke  active_record
+      create    db/migrate/20100615004429_create_microposts.rb
+      create    app/models/micropost.rb
+      invoke    test_unit
+      create      test/unit/micropost_test.rb
+      create      test/fixtures/microposts.yml
+       route  resources :microposts
+      invoke  scaffold_controller
+      create    app/controllers/microposts_controller.rb
+      invoke    erb
+      create      app/views/microposts
+      create      app/views/microposts/index.html.erb
+      create      app/views/microposts/edit.html.erb
+      create      app/views/microposts/show.html.erb
+      create      app/views/microposts/new.html.erb
+      create      app/views/microposts/_form.html.erb
+      invoke    test_unit
+      create      test/functional/microposts_controller_test.rb
+      invoke    helper
+      create      app/helpers/microposts_helper.rb
+      invoke      test_unit
+      create        test/unit/helpers/microposts_helper_test.rb
+      invoke  stylesheets
+   identical    public/stylesheets/scaffold.css
+   ```
+   
 ### 2.3.2 Appliquer le micro aux micros messages
 ### 2.3.3 Un Utilisateur has_many micro messages
 ### 2.3.4 Hiérarchie des héritages
