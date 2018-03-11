@@ -1,4 +1,4 @@
-# 2. Appliation Demo_App, By Michael Hartl
+# 2. Application Demo_App, By Michael Hartl
 
 ## 2.1 Demo_App
 Nous commençons donc par le modèle de données pour les utilisateurs de l'application, et nous ajouterons ensuite un modèle de données pour les micro-messages (microposts).:<br/>
