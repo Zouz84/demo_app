@@ -198,8 +198,26 @@ from /home/seize/.rvm/gems/ruby-2.3.4/gems/activemodel-5.1.5/lib/active_model/at
 ```
 
 ### 2.3.5 Hiérarchie des héritages
-### 2.3.6 Déployer l'app Démo
+PArmi les détails qui ont leur importance, concentrons nous quelques instants sur les héritages. On aura remarqué que dans nos **model**, il y a déjà une ligne de code: `class User < ActiveRecord::Base` qui est inscrite lorsqu'on ouvre le fichier pour la premiere fois. Il s'agit en fait d'une hiérarchie, qui veut dire que ce **model** appartient (**<**) à **ActiveRecord::Base**. En gros, nos modèles vont hériter des méthodes, actions, etc, qui sont placés dans la **Base**.<br/>
+De même pour tous les controlleurs, qui héritent de l'**ApplicationController**. En allant regarder de plus près notre *application_controller.rb*, on remarque que la première ligne de celui-ci est: `class ApplicationController < ActionController::Base` <br/>
+Cela signifie donc que nos controlleurs héritent de l'**ApplicationController**, qui lui même hérite de l'**ActionController::Base**. Intéressant non? ;).<br/>
+**Hiérarchie:** Puisque tous les contrôleurs Rails héritent de ApplicationController, les règles définies dans le contrôleur de l'application sont automatiquement appliquées à toutes les actions à l'intérieur de l'application. <br/>
 
+### 2.3.6 Déployer l'app Démo
+On y va, on est chaud, on publie tout sur le web:<br/>
+```
+$ git add .
+$ git commit -a -m "Fin de l'application demo"
+$ git push
+```
+Puisque on est chaud, qu'on a 100 app free sur heroku...:<br/>
+```ruby
+$ heroku create
+$ git push heroku master
+$ heroku rake db:migrate
+```
+Et bam, ça a fait des chocapics.<br/>
+https://quiet-spire-25471.herokuapp.com/microposts
 
 
 
